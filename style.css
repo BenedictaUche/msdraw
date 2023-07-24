@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.drawing-tool {
+    /* Add styles for the drawing tool container here */
+}
+
+canvas {
+    border: 1px solid #333;
+    background-color: #fff;
+    height: 400px;
+    width: 100%;
+    /* Add more styles for the canvas here */
+}
