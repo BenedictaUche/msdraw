@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     margin: 0;
     padding: 0;
@@ -12,6 +13,10 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #f0f0f0;
+}
+
+li {
+    list-style: none;
 }
 
 .drawing-tool {
