@@ -1,31 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>msDraw</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/39d1ce5597.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <div>
-        <div>
-            <ul>
-                <li><i class="fa-solid fa-rotate-left"></i></li>
-                <li><i class="fa-solid fa-rotate-right"></i></li>
-                <li><i class="fa-solid fa-trash"></i></li>
-            </ul>
-        </div>
-        <div>
-            <button class="share">Share</button>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/39d1ce5597.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-top">
+        <div class="container-top-left">
+          <ul class="top-list">
+            <li style="font-weight: semibold">File</li>
+            <li><i class="fa-solid fa-rotate-left" title="Undo"></i></li>
+            <li><i class="fa-solid fa-rotate-right" title="Redo"></i></li>
+            <li><i class="fa-solid fa-trash" title="Delete"></i></li>
+            <li>
+              <i
+                class="fa-solid fa-clipboard"
+                title="Copy"
+                aria-hidden="true"
+              ></i>
+            </li>
+          </ul>
         </div>
 
-        
-    </div>
-    <div class="drawing-tool">
+        <div class="btn-div">
+          <button class="share" id="share">Share</button>
+        </div>
+      </div>
+
+      <div>
+        <div class="colors">
+          <ul class="color-picker">
+            <li class="black"></li>
+            <li class="gray"></li>
+            <li class="purple"></li>
+            <li class="blue"></li>
+            <li class="orange"></li>
+            <li class="green"></li>
+          </ul>
+        </div>
+
+        <div class="shapes"></div>
+
+      </div>
+
+      <div class="drawing-tool">
         <canvas id="canvas"></canvas>
         <!-- Add other UI elements/buttons here -->
+      </div>
+
+      <div class="bottom">
+        <ul class="bottom-list" id="all">
+          <li id="mouse-pointer" class="active">
+            <i class="fa fa-mouse-pointer" aria-hidden="true" title="Select"></i>
+          </li>
+          <li id="hand"><i class="fa-solid fa-hand-paper" title="Hand"></i></li>
+          <li id="pencil"><i class="fa fa-pencil" aria-hidden="true" title="Draw"></i></li>
+          <li id="eraser"><i class="fa fa-eraser" aria-hidden="true" title="Clean"></i></li>
+          <li id="arrow-up">
+            <i class="fa fa-arrow-up" aria-hidden="true" title="Arrow"></i>
+          </li>
+          <li id="text">
+            <i class="fa fa-text-height" aria-hidden="true" title="Text"></i>
+          </li>
+          <li id="note">
+            <i class="fa fa-sticky-note" aria-hidden="true" title="Note"></i>
+          </li>
+          <li id="picture">
+            <i class="fa fa-picture-o" aria-hidden="true" title="Asset"></i>
+          </li>
+          <li id="square"><i class="fa fa-square" aria-hidden="true" title="Asset"></i></li>
+          <li id="angle-up">
+            <i class="fa fa-angle-up" aria-hidden="true" title="More"></i>
+          </li>
+        </ul>
+      </div>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
