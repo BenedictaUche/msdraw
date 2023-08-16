@@ -26,6 +26,7 @@
                 aria-hidden="true"
               ></i>
             </li>
+            <li id="cropButton"><i class="fa fa-crop" title="crop" aria-hidden="true"></i></li>
           </ul>
         </div>
 
@@ -50,7 +51,7 @@
 
       </div>
 
-      <div class="drawing-tool">
+      <div class="drawing-tool" id="canvasWrapper">
         <canvas id="canvas"></canvas>
         <!-- Add other UI elements/buttons here -->
       </div>
@@ -74,7 +75,8 @@
           </li>
           <li id="picture">
             <i class="fa fa-picture-o" aria-hidden="true" title="Asset"></i>
-          </li>
+          </li><input type="file" id="file-input" style="display: none;" />
+
           <li id="square"><i class="fa fa-square" aria-hidden="true" title="Asset"></i></li>
           <li id="angle-up">
             <i class="fa fa-angle-up" aria-hidden="true" title="More"></i>
