@@ -17,7 +17,7 @@ msDraw is a versatile and user-friendly drawing platform that enables users to c
 Follow these steps to get msDraw up and running on your local machine:
 
 1. Clone the repository:
-`git clone https://github.com/BenedictaUche/msdraw.git`
+`git clone https://github.com/BenedictaUche/msdraw.git`, then change directory, 
 `cd msdraw`
 
 
